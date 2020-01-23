@@ -76,10 +76,10 @@ int APIENTRY wWinMain(
 
     WNDCLASSEXW wcex = {};
 
-    wcex.cbSize = sizeof(WNDCLASSEX);
-    wcex.style = CS_HREDRAW | CS_VREDRAW;
-    wcex.lpfnWndProc = WndProc;
-    wcex.hCursor = LoadCursor(NULL, IDC_ARROW);
+    wcex.cbSize        = sizeof(WNDCLASSEX);
+    wcex.style         = CS_HREDRAW | CS_VREDRAW;
+    wcex.lpfnWndProc   = WndProc;
+    wcex.hCursor       = LoadCursor(NULL, IDC_ARROW);
     wcex.lpszClassName = L"VsMainWindowClass";
     wcex.hbrBackground = (HBRUSH)(COLOR_WINDOW + 1);
 
@@ -90,10 +90,10 @@ int APIENTRY wWinMain(
 
     wcex = {};
 
-    wcex.cbSize = sizeof(WNDCLASSEX);
-    wcex.style = CS_HREDRAW | CS_VREDRAW;
-    wcex.lpfnWndProc = WndProc;
-    wcex.hCursor = LoadCursor(NULL, IDC_ARROW);
+    wcex.cbSize        = sizeof(WNDCLASSEX);
+    wcex.style         = CS_HREDRAW | CS_VREDRAW;
+    wcex.lpfnWndProc   = WndProc;
+    wcex.hCursor       = LoadCursor(NULL, IDC_ARROW);
     wcex.lpszClassName = L"VsVideoWindowClass";
 
     if (!RegisterClassEx(&wcex))
